@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0"
+      prefWidth="1280.0" spacing="15.0" style="-fx-background-color: d9d9d9;" xmlns="http://javafx.com/javafx/17.0.2-ea"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="insuranceapp.groupproject_cosc2440_insuranceapp.Views.InsuranceSurveyor.InsuranceSurveyorMainView">
+   <opaqueInsets>
+      <Insets/>
+   </opaqueInsets>
+   <padding>
+      <Insets bottom="16.0" left="16.0" right="16.0" top="16.0"/>
+   </padding>
+   <VBox alignment="TOP_CENTER" prefHeight="688.0" prefWidth="268.0" spacing="10.0"
+         style="-fx-background-color: ffffff;">
+      <padding>
+         <Insets bottom="16.0" left="16.0" right="16.0" top="16.0"/>
+      </padding>
+      <Label alignment="CENTER" prefHeight="81.0" prefWidth="234.0" text="INSURANCE APP">
+         <font>
+            <Font name="Bauhaus 93" size="24.0"/>
+         </font>
+      </Label>
+      <Button fx:id="changeClaimView" mnemonicParsing="false" prefHeight="39.0" prefWidth="250.0"
+              style="-fx-background-radius: 10;" stylesheets="@InsuranceSurveyorClaim/InsuranceSurveyorClaim.css"
+              text="Claim">
+         <font>
+            <Font size="18.0"/>
+         </font>
+      </Button>
+      <Button fx:id="changePolicyOwnerView" layoutX="62.0" layoutY="117.0" mnemonicParsing="false" prefHeight="39.0"
+              prefWidth="266.0" style="-fx-background-radius: 10;"
+              stylesheets="@InsuranceSurveyorClaim/InsuranceSurveyorClaim.css" text="Policy Owner">
+         <font>
+            <Font size="18.0"/>
+         </font>
+      </Button>
+      <Button fx:id="changePolicyHolderView" layoutX="62.0" layoutY="166.0" mnemonicParsing="false" prefHeight="39.0"
+              prefWidth="320.0" style="-fx-background-radius: 10;"
+              stylesheets="@InsuranceSurveyorClaim/InsuranceSurveyorClaim.css" text="Policy Holder">
+         <font>
+            <Font size="18.0"/>
+         </font>
+      </Button>
+      <Button fx:id="changeDependentView" layoutX="62.0" layoutY="215.0" mnemonicParsing="false" prefHeight="39.0"
+              prefWidth="304.0" style="-fx-background-radius: 10;"
+              stylesheets="@InsuranceSurveyorClaim/InsuranceSurveyorClaim.css" text="Dependent">
+         <font>
+            <Font size="18.0"/>
+         </font>
+      </Button>
+   </VBox>
+   <Pane prefHeight="688.0" prefWidth="980.0">
+      <Label fx:id="directPage" layoutX="14.0" layoutY="14.0" text="All Claim">
+         <font>
+            <Font name="System Bold" size="36.0"/>
+         </font>
+      </Label>
+      <Pane layoutX="745.0" prefHeight="81.0" prefWidth="228.0"
+            style="-fx-background-color: ffffff; -fx-background-radius: 10;">
+         <FontAwesomeIconView glyphName="SIGN_OUT" layoutX="182.0" layoutY="49.0" size="24"/>
+         <Circle fill="DODGERBLUE" layoutX="45.0" layoutY="41.0" radius="31.0" stroke="BLACK"
+                 strokeType="INSIDE"/>
+         <Label fx:id="userName" layoutX="93.0" layoutY="28.0" text="Name">
+            <font>
+               <Font size="16.0"/>
+            </font>
+         </Label>
+      </Pane>
+      <BorderPane fx:id="mainPane" layoutY="167.0" prefHeight="524.0" prefWidth="973.0"/>
+   </Pane>
+</HBox>

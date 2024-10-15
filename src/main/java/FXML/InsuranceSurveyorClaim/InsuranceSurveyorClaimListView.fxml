@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="524.0" prefWidth="973.0" spacing="10.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.insurancesurveyor.View.InsuranceSurveyorClaimView">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefWidth="973.0" spacing="20.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="420.0">
+               <children>
+                  <TextField fx:id="searchField" prefHeight="44.0" prefWidth="450.0" promptText="Search for a Claim (Enter an ID or Insured Person)" style="-fx-background-color: C0C0C0; -fx-background-radius: 10;" styleClass="searchField" stylesheets="@InsuranceSurveyorClaim.css">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <Label fx:id="enterSearch">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="SEARCH" size="21" textAlignment="CENTER" wrappingWidth="31.0" />
+                     </graphic>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="429.0" spacing="10.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="Sort Options: ">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <MenuButton mnemonicParsing="false" styleClass="filter_btn" stylesheets="@InsuranceSurveyorClaim.css" text="Status">
+                    <items>
+                      <MenuItem fx:id="statusNew" mnemonicParsing="false" text="NEW" />
+                        <MenuItem fx:id="statusRequire" mnemonicParsing="false" text="REQUIRE" />
+                        <MenuItem fx:id="statusUpdate" mnemonicParsing="false" text="UPDATE" />
+                        <MenuItem fx:id="statusPending" mnemonicParsing="false" text="PENDING" />
+                        <MenuItem fx:id="statusApprove" mnemonicParsing="false" text="APPROVE" />
+                        <MenuItem fx:id="statusDecline" mnemonicParsing="false" text="DECLINE" />
+                    </items>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </MenuButton>
+                  <MenuButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" styleClass="filter_btn" stylesheets="@InsuranceSurveyorClaim.css" text="ClaimDate">
+                     <items>
+                        <MenuItem fx:id="claimDateNewest" mnemonicParsing="false" text="Newest" />
+                        <MenuItem fx:id="claimDateOldest" mnemonicParsing="false" text="Oldest" />
+                     </items>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </MenuButton>
+                  <MenuButton fx:id="examDateMenu" layoutX="202.0" layoutY="10.0" mnemonicParsing="false" styleClass="filter_btn" stylesheets="@InsuranceSurveyorClaim.css" text="ExamDate">
+                     <items>
+                        <MenuItem fx:id="examDateNewest" mnemonicParsing="false" text="Newest" />
+                        <MenuItem fx:id="examDateOldest" mnemonicParsing="false" text="Oldest" />
+                     </items>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </MenuButton>
+                  <Label fx:id="filter" text="Reset" textFill="#476f65">
+                     <graphic>
+                        <FontAwesomeIconView fill="#476f65" glyphName="FILTER" size="22" />
+                     </graphic>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="29.0" prefWidth="960.0" style="-fx-border-color: black; -fx-border-style: hidden hidden solid hidden;">
+         <children>
+            <Label prefHeight="17.0" prefWidth="387.0" text="Claim ID">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="400.0" text="Insured Person">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="387.0" text="Claim Date">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="387.0" text="Exam Date">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="385.0" text="Bank Info">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label alignment="CENTER" layoutX="729.0" layoutY="10.0" prefHeight="17.0" prefWidth="385.0" text="    Status">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="759.0" layoutY="10.0" prefHeight="17.0" prefWidth="400.0" text="       Action">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="780.0" layoutY="10.0" prefHeight="17.0" prefWidth="387.0" text="View">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </HBox>
+      <ListView fx:id="listViewClaim" prefHeight="600.0" prefWidth="973.0" style="-fx-background-color: d9d9d9;">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </ListView>
+   </children>
+</VBox>

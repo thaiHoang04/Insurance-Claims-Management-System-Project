@@ -1,0 +1,43 @@
+.title_container{
+    -fx-background-color: #0B6623;
+    -fx-alignment: center;
+}
+
+.title_container_text{
+    -fx-font-size: 35;
+    -fx-fill: white;
+    -fx-font-weight: bold;
+}
+
+.title_container FontAwesomeIconView {
+    -fx-fill: white;
+}
+
+.detail_title_container {
+    -fx-alignment: center;
+}
+
+.detail_title_container_text {
+    -fx-font-size: 15;
+    -fx-text-fill: black;
+}
+
+.detail_container {
+    -fx-alignment: center;
+    -fx-background-color: #EEEEEE;
+    -fx-background-radius: 15;
+}
+
+.detail_container_text {
+    -fx-font-size: 15;
+    -fx-text-fill: black;
+}
+
+.claim_title_container {
+    -fx-alignment: center;
+}
+
+.claim_title_container_text {
+    -fx-font-size: 20;
+    -fx-text-fill: black;
+}

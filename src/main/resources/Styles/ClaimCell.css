@@ -1,0 +1,40 @@
+.detail_lbl {
+    -fx-font-weight: 700;
+    -fx-text-fill: #000000;
+}
+
+.detailBtn {
+    -fx-background-radius: 10px;
+    -fx-background-color: #D9D9D9;
+}
+
+.detailBtn:hover {
+    -fx-background-color: #C0C0C0;
+}
+
+.cell_container {
+    -fx-background-radius: 10px;
+    -fx-background-color: #FFFFFF;
+}
+
+.cell_container Line {
+    -fx-stroke: #EEEEEE;
+}
+
+.btn {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10px;
+}
+
+.btn FontAwesomeIconView {
+    -fx-fill: #476F65;
+}
+
+.btn:hover {
+    -fx-background-color: #D9D9D9;
+}
+
+.pane {
+    -fx-background-color: transparent;
+    -fx-background-radius: 10px;
+}

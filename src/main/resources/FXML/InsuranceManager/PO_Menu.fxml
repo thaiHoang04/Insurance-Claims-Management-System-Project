@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="650.0" prefWidth="850.0" stylesheets="@../../Styles/DashBoard.css"
+            xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="insuranceapp.groupproject_cosc2440_insuranceapp.Controllers.InsuranceManager.Controller_PO">
+    <padding>
+        <Insets top="20.0" />
+    </padding>
+   <Label fx:id="enterSearch" layoutX="360.0" layoutY="125.0" AnchorPane.topAnchor="105.0">
+      <graphic>
+          <FontAwesomeIconView glyphName="SEARCH" styleClass="search_menu_container_FontAwesomeIcon" />
+      </graphic>
+   </Label>
+    <VBox prefHeight="70.0" prefWidth="320.0" styleClass="profile_menu_container" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="5.0">
+        <HBox prefHeight="70.0" prefWidth="320.0" styleClass="profile_menu_container">
+            <VBox prefHeight="70.0" prefWidth="80.0" styleClass="profile_menu_container">
+                <FontAwesomeIconView glyphName="CIRCLE" size="50" styleClass="profile_menu_container_FontAwesomeIcon" />
+            </VBox>
+            <VBox prefHeight="70.0" prefWidth="160.0" styleClass="profile_name_menu_container">
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="profile_menu_container_text" text="Name" />
+            </VBox>
+            <VBox prefHeight="70.0" prefWidth="80.0" styleClass="category_menu_container" />
+        </HBox>
+    </VBox>
+    <VBox layoutX="58.0" layoutY="282.0" prefHeight="35.0" prefWidth="600.0" styleClass="search_menu_container" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="150.0">
+        <HBox prefHeight="35.0" prefWidth="600.0" styleClass="category_menu_container">
+            <VBox prefHeight="35.0" prefWidth="200.0" styleClass="category_menu_container">
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="category_menu_container_text" text="Policy Owner ID" />
+            </VBox>
+            <VBox prefHeight="35.0" prefWidth="5.0" styleClass="category_menu_container">
+                <Line startY="25.0" stroke="#57595d" />
+            </VBox>
+            <VBox prefHeight="35.0" prefWidth="195.0" styleClass="category_menu_container">
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="category_menu_container_text" text="Name" />
+            </VBox>
+            <VBox prefHeight="35.0" prefWidth="5.0" styleClass="category_menu_container">
+                <Line startY="25.0" stroke="#57595d" />
+            </VBox>
+            <VBox prefHeight="35.0" prefWidth="195.0" styleClass="category_menu_container">
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="category_menu_container_text" text="Fee" />
+            </VBox>
+        </HBox>
+    </VBox>
+    <ListView fx:id="pO_listview" layoutX="67.0" layoutY="332.0" prefHeight="350.0" prefWidth="600.0" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="200.0" />
+    <TextField fx:id="searchPO" layoutX="68.0" layoutY="245.0" prefHeight="26.0" prefWidth="293.0" promptText="Search for a Policy Owner (Enter an ID/Name)" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="100.0" />
+</AnchorPane>

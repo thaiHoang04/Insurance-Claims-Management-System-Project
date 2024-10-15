@@ -1,0 +1,20 @@
+.title_container {
+    -fx-background-radius: 10;
+    -fx-background-color: #476F65;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: 700;
+    -fx-font-size: 24;
+}
+
+.content_container {
+    -fx-font-weight: 600;
+    -fx-font-size: 18;
+}
+
+.button {
+    -fx-background-color: #476F65;
+    -fx-background-radius: 10px;
+    -fx-font-size: 15;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: 700;
+}

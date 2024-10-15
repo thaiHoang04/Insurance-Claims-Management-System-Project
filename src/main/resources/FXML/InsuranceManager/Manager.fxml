@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="manager_parent" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="insuranceapp.groupproject_cosc2440_insuranceapp.Controllers.InsuranceManager.Manager">
+
+    <left>
+        <fx:include source="Menu.fxml"/>
+    </left>
+
+    <center>
+        <fx:include source="Claim_Menu.fxml"/>
+    </center>
+
+</BorderPane>

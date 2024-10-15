@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0"
+      prefWidth="1280.0" style="-fx-background-color: E4E4E4;" xmlns="http://javafx.com/javafx/17.0.2-ea"
+      xmlns:fx="http://javafx.com/fxml/1">
+   <Pane prefHeight="91.0" prefWidth="1280.0" style="-fx-background-color: #476f65;">
+      <Label layoutX="32.0" layoutY="15.0" text="Claim Detail" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0"/>
+         </font>
+      </Label>
+      <FontAwesomeIconView fill="#e80000" glyphName="CLOSE" layoutX="1205.0" layoutY="57.0" size="46" text=""/>
+   </Pane>
+   <HBox prefHeight="278.0" prefWidth="1280.0" spacing="100.0" style="-fx-border-style: hidden hidden solid hidden;">
+      <VBox.margin>
+         <Insets/>
+      </VBox.margin>
+      <padding>
+         <Insets bottom="32.0" left="32.0" right="32.0" top="32.0"/>
+      </padding>
+      <VBox prefHeight="214.0" prefWidth="529.0" spacing="20.0">
+         <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="122.0" prefHeight="36.0" prefWidth="486.0"
+               spacing="10.0">
+            <Label prefHeight="25.0" prefWidth="164.0" text="Claim ID:" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="16.0"/>
+               </font>
+            </Label>
+            <TextField editable="false" prefHeight="123.0" prefWidth="211.0"
+                       style="-fx-background-color: d9d9d9; -fx-background-radius: 5;" text="f-0000000001"
+                       HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="16.0"/>
+               </font>
+            </TextField>
+         </HBox>
+         <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="36.0" prefWidth="486.0"
+               spacing="10.0">
+            <Label prefHeight="25.0" prefWidth="164.0" text="Insured Person:" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="16.0"/>
+               </font>
+            </Label>
+            <TextField editable="false" prefHeight="123.0" prefWidth="211.0"
+                       style="-fx-background-color: d9d9d9; -fx-background-radius: 5;" text="James Bonds"
+                       HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="16.0"/>
+               </font>
+            </TextField>
+         </HBox>
+         <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="66.0" prefHeight="36.0" prefWidth="486.0"
+               spacing="10.0">
+            <Label prefHeight="25.0" prefWidth="164.0" text="Claim Date:" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="16.0"/>
+               </font>
+            </Label>
+            <TextField editable="false" prefHeight="123.0" prefWidth="211.0"
+                       style="-fx-background-color: d9d9d9; -fx-background-radius: 5;" text="01/10/2024"
+                       HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="16.0"/>
+               </font>
+            </TextField>
+         </HBox>
+         <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="122.0" prefHeight="36.0" prefWidth="486.0"
+               spacing="10.0">
+            <Label prefHeight="25.0" prefWidth="164.0" text="Exam Date:" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="16.0"/>
+               </font>
+            </Label>
+            <TextField editable="false" prefHeight="123.0" prefWidth="211.0"
+                       style="-fx-background-color: d9d9d9; -fx-background-radius: 5;" text="05/10/2025"
+                       HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="16.0"/>
+               </font>
+            </TextField>
+         </HBox>
+      </VBox>
+      <VBox layoutX="42.0" layoutY="42.0" prefHeight="214.0" prefWidth="529.0" spacing="20.0">
+         <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="122.0" prefHeight="36.0" prefWidth="486.0"
+               spacing="10.0">
+            <Label prefHeight="25.0" prefWidth="164.0" text="Claim Amount:" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="16.0"/>
+               </font>
+            </Label>
+            <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="359.0"
+                  style="-fx-background-color: D9D9D9; -fx-background-radius: 5;">
+               <padding>
+                  <Insets right="5.0"/>
+               </padding>
+               <TextField editable="false" prefHeight="36.0" prefWidth="293.0" text="10 000 000"
+                          HBox.hgrow="ALWAYS">
+                  <font>
+                     <Font size="16.0"/>
+                  </font>
+               </TextField>
+               <Label alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="50.0" text="VND">
+                  <font>
+                     <Font size="16.0"/>
+                  </font>
+               </Label>
+            </HBox>
+         </HBox>
+         <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="36.0" prefWidth="486.0"
+               spacing="10.0">
+            <Label prefHeight="25.0" prefWidth="164.0" text="Card Number:" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="16.0"/>
+               </font>
+            </Label>
+            <TextField editable="false" prefHeight="123.0" prefWidth="211.0"
+                       style="-fx-background-color: d9d9d9; -fx-background-radius: 5;" text="0000000001"
+                       HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="16.0"/>
+               </font>
+            </TextField>
+         </HBox>
+         <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="66.0" prefHeight="36.0" prefWidth="486.0"
+               spacing="10.0">
+            <Label prefHeight="25.0" prefWidth="164.0" text="Status:" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="16.0"/>
+               </font>
+            </Label>
+            <TextField editable="false" prefHeight="123.0" prefWidth="211.0"
+                       style="-fx-background-color: d9d9d9; -fx-background-radius: 5;" text="Pending"
+                       HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="16.0"/>
+               </font>
+            </TextField>
+         </HBox>
+         <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="122.0" prefHeight="36.0" prefWidth="486.0"
+               spacing="10.0">
+            <Label prefHeight="25.0" prefWidth="164.0" text="Receiver Banking Info:" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="16.0"/>
+               </font>
+            </Label>
+            <TextField editable="false" prefHeight="123.0" prefWidth="211.0"
+                       style="-fx-background-color: d9d9d9; -fx-background-radius: 5;"
+                       text="Vietcombank - 12345678910 - JamesBonds" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="16.0"/>
+               </font>
+            </TextField>
+         </HBox>
+      </VBox>
+   </HBox>
+   <HBox prefHeight="376.0" prefWidth="1280.0" spacing="80.0">
+      <VBox prefHeight="368.0" prefWidth="631.0" HBox.hgrow="ALWAYS">
+         <padding>
+            <Insets bottom="32.0" left="32.0" right="32.0" top="16.0"/>
+         </padding>
+         <Label text="DOCUMENT: ">
+            <font>
+               <Font size="36.0"/>
+            </font>
+         </Label>
+         <VBox prefHeight="200.0" prefWidth="530.0" spacing="10.0" VBox.vgrow="ALWAYS">
+            <VBox.margin>
+               <Insets/>
+            </VBox.margin>
+            <HBox prefHeight="29.0" prefWidth="960.0"
+                  style="-fx-border-color: black; -fx-border-style: hidden hidden solid hidden;">
+               <padding>
+                  <Insets left="10.0" right="10.0"/>
+               </padding>
+               <Label prefHeight="17.0" prefWidth="387.0" text="Claim ID">
+                  <font>
+                     <Font size="16.0"/>
+                  </font>
+               </Label>
+               <Label prefHeight="17.0" prefWidth="400.0" text="Card Number">
+                  <font>
+                     <Font size="16.0"/>
+                  </font>
+               </Label>
+               <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="387.0" text="Document Name">
+                  <font>
+                     <Font size="16.0"/>
+                  </font>
+               </Label>
+            </HBox>
+            <HBox prefHeight="217.0" prefWidth="530.0" spacing="5.0" VBox.vgrow="ALWAYS">
+               <VBox prefHeight="135.0" prefWidth="515.0" spacing="10.0" HBox.hgrow="ALWAYS">
+                  <HBox alignment="CENTER_LEFT" prefHeight="65.0" prefWidth="530.0"
+                        style="-fx-background-color: ffffff; -fx-background-radius: 10;">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                     </padding>
+                     <Label alignment="TOP_LEFT" prefHeight="17.0" prefWidth="387.0"
+                            text="f-0000000001">
+                        <font>
+                           <Font size="16.0"/>
+                        </font>
+                     </Label>
+                     <Label prefHeight="17.0" prefWidth="400.0" text="0000000001">
+                        <font>
+                           <Font size="16.0"/>
+                        </font>
+                     </Label>
+                     <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="387.0"
+                            text="Hospital Receipt">
+                        <font>
+                           <Font size="16.0"/>
+                        </font>
+                     </Label>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="65.0" prefWidth="530.0"
+                        style="-fx-background-color: ffffff; -fx-background-radius: 10;">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                     </padding>
+                     <Label alignment="TOP_LEFT" prefHeight="17.0" prefWidth="387.0"
+                            text="f-0000000001">
+                        <font>
+                           <Font size="16.0"/>
+                        </font>
+                     </Label>
+                     <Label prefHeight="17.0" prefWidth="400.0" text="0000000001">
+                        <font>
+                           <Font size="16.0"/>
+                        </font>
+                     </Label>
+                     <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="387.0"
+                            text="Citizen Identification">
+                        <font>
+                           <Font size="16.0"/>
+                        </font>
+                     </Label>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="65.0" prefWidth="530.0"
+                        style="-fx-background-color: ffffff; -fx-background-radius: 10;">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                     </padding>
+                     <Label alignment="TOP_LEFT" prefHeight="17.0" prefWidth="387.0"
+                            text="f-0000000001">
+                        <font>
+                           <Font size="16.0"/>
+                        </font>
+                     </Label>
+                     <Label prefHeight="17.0" prefWidth="400.0" text="0000000001">
+                        <font>
+                           <Font size="16.0"/>
+                        </font>
+                     </Label>
+                     <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="387.0"
+                            text="Accident Report">
+                        <font>
+                           <Font size="16.0"/>
+                        </font>
+                     </Label>
+                  </HBox>
+               </VBox>
+               <ScrollBar orientation="VERTICAL" prefWidth="6.0"/>
+            </HBox>
+         </VBox>
+      </VBox>
+      <VBox prefHeight="368.0" prefWidth="643.0" spacing="32.0" HBox.hgrow="ALWAYS">
+         <padding>
+            <Insets bottom="32.0" left="32.0" right="32.0" top="16.0"/>
+         </padding>
+         <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="277.0" spacing="10.0">
+            <Label prefHeight="25.0" prefWidth="164.0" text="Document Name:" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="16.0"/>
+               </font>
+            </Label>
+            <TextField alignment="CENTER" editable="false" prefHeight="36.0" prefWidth="373.0"
+                       style="-fx-background-color: d9d9d9; -fx-background-radius: 5;" text="Hospital Receipt">
+               <font>
+                  <Font size="16.0"/>
+               </font>
+            </TextField>
+         </HBox>
+         <ImageView fitHeight="245.0" fitWidth="540.0" pickOnBounds="true" preserveRatio="true"
+                    VBox.vgrow="ALWAYS"/>
+      </VBox>
+   </HBox>
+</VBox>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="policyHolder_parent"
+            xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="insuranceapp.groupproject_cosc2440_insuranceapp.Controllers.PolicyHolder.PolicyHolderController">
+    <left>
+        <fx:include source="PolicyHolderMenuView.fxml" />
+    </left>
+
+    <center>
+        <fx:include source="PolicyHolderClaimView.fxml"/>
+    </center>
+</BorderPane>

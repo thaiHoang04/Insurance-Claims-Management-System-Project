@@ -1,0 +1,23 @@
+.pane_container {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10px;
+}
+
+.pane_container Button {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10px;
+}
+
+.pane_container Button:hover {
+    -fx-background-color: #DDDED8;
+}
+
+.pane_container FontAwesomeIconView {
+    -fx-fill: #476F65;
+}
+
+.pane_container Text {
+    -fx-font-weight: 700;
+}
+
+

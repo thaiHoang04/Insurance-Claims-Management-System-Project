@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="200.0" stylesheets="@../../Styles/Menu.css" xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="insuranceapp.groupproject_cosc2440_insuranceapp.Controllers.InsuranceManager.Menu_Controller">
+    <AnchorPane prefHeight="750.0" prefWidth="200.0">
+        <VBox prefHeight="100.0" prefWidth="200.0" styleClass="logout_menu" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="550.0">
+            <Button fx:id="logout_button" mnemonicParsing="false" text="LOG OUT" textFill="WHITE">
+                <graphic>
+                    <FontAwesomeIconView glyphName="EXTERNAL_LINK" size="10" styleClass="logout_menu" text="" />
+                </graphic>
+            </Button>
+        </VBox>
+        <VBox prefHeight="100.0" prefWidth="200.0" styleClass="title_menu_container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title_menu_container_text" text="INSURANCE APP">
+                <font>
+                    <Font size="12.0" />
+                </font>
+            </Text>
+        </VBox>
+        <VBox layoutY="225.0" prefHeight="450.0" prefWidth="200.0" styleClass="menu_container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+            <Button fx:id="claim_button" mnemonicParsing="false" prefHeight="45.0" prefWidth="150.0" text="Claim">
+                <graphic>
+                    <FontAwesomeIconView glyphName="FILE" size="10" text="" />
+                </graphic>
+            </Button>
+         <Button fx:id="policyowner_button" mnemonicParsing="false" prefHeight="45.0" prefWidth="150.0" text="Policy Owner">
+            <graphic>
+               <FontAwesomeIconView glyphName="USER" size="10" />
+            </graphic>
+         </Button>
+            <Button fx:id="policyholder_button" mnemonicParsing="false" prefHeight="45.0" prefWidth="150.0" text="Policy Holder">
+                <graphic>
+                    <FontAwesomeIconView glyphName="USER" size="10" text="" />
+                </graphic>
+            </Button>
+            <Button fx:id="dependent_button" mnemonicParsing="false" prefHeight="45.0" prefWidth="150.0" text="Dependent">
+                <graphic>
+                    <FontAwesomeIconView glyphName="USER" size="10" />
+                </graphic>
+            </Button>
+            <Button fx:id="surveyor_button" mnemonicParsing="false" prefHeight="45.0" prefWidth="150.0" text="Insurance Surveyor">
+                <graphic>
+                    <FontAwesomeIconView glyphName="USER" size="10" />
+                </graphic>
+            </Button>
+        </VBox>
+    </AnchorPane>
+</VBox>

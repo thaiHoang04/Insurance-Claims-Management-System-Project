@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="474.0" prefWidth="850.0" styleClass="pane" stylesheets="@../../Styles/PolicyHolderClaimView.css"
+            xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="insuranceapp.groupproject_cosc2440_insuranceapp.Controllers.PolicyOwner.PolicyOwnerDependentViewController">
+    <ListView fx:id="dependent_listview" layoutX="8.0" layoutY="99.0" prefHeight="370.0" prefWidth="840.0" styleClass="claimListView" stylesheets="@../../Styles/PolicyHolderClaimView.css" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="99.0" />
+    <HBox layoutX="8.0" layoutY="14.0" prefHeight="31.0" prefWidth="559.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="14.0">
+        <padding>
+            <Insets top="3.0" />
+        </padding>
+        <StackPane prefHeight="35.0" prefWidth="340.0" HBox.hgrow="ALWAYS" />
+        <StackPane alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="147.0">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+                <Insets left="5.0" />
+            </HBox.margin>
+            <Button mnemonicParsing="false" styleClass="filter_container" stylesheets="@../../Styles/PolicyHolderClaimView.css" />
+        </StackPane>
+        <StackPane alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="263.0">
+            <HBox.margin>
+                <Insets right="3.0" />
+            </HBox.margin>
+            <Button fx:id="addNewDependentBtn" mnemonicParsing="false" styleClass="createClaimBtn" stylesheets="@../../Styles/PolicyHolderClaimView.css" text="Add dependent">
+            <font>
+               <Font name="System Bold Italic" size="12.0" />
+            </font></Button>
+        </StackPane>
+    </HBox>
+    <HBox layoutX="3.0" layoutY="55.0" prefHeight="35.0" prefWidth="775.0" styleClass="namePane" stylesheets="@../../Styles/PolicyHolderClaimView.css" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="55.0">
+        <StackPane blendMode="OVERLAY" prefHeight="46.0" prefWidth="101.0" HBox.hgrow="ALWAYS">
+            <Label text="ID" StackPane.alignment="CENTER" />
+        </StackPane>
+        <Separator blendMode="OVERLAY" orientation="VERTICAL" prefHeight="200.0" />
+        <StackPane blendMode="OVERLAY" layoutX="10.0" layoutY="10.0" prefHeight="46.0" prefWidth="101.0" HBox.hgrow="ALWAYS">
+            <Label text="Name" StackPane.alignment="CENTER" />
+        </StackPane>
+        <Separator blendMode="OVERLAY" layoutX="112.0" layoutY="10.0" orientation="VERTICAL" prefHeight="200.0" />
+        <StackPane blendMode="OVERLAY" layoutX="118.0" layoutY="10.0" prefHeight="46.0" prefWidth="101.0" HBox.hgrow="ALWAYS">
+            <Label text="Insurance Card ID" StackPane.alignment="CENTER" />
+        </StackPane>
+        <Separator blendMode="OVERLAY" layoutX="220.0" layoutY="10.0" orientation="VERTICAL" prefHeight="200.0" />
+        <StackPane blendMode="OVERLAY" layoutX="226.0" layoutY="10.0" prefHeight="46.0" prefWidth="101.0" HBox.hgrow="ALWAYS">
+            <Label text="Phone" StackPane.alignment="CENTER" />
+        </StackPane>
+        <Separator blendMode="OVERLAY" layoutX="328.0" layoutY="10.0" orientation="VERTICAL" prefHeight="200.0" />
+        <StackPane prefHeight="35.0" prefWidth="110.0" HBox.hgrow="ALWAYS" />
+    </HBox>
+    <StackPane disable="true" layoutX="8.0" layoutY="99.0" prefHeight="324.0" prefWidth="840.0"
+               AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+        <Label fx:id="noDependentLbl" blendMode="OVERLAY" text="No dependents">
+           <font>
+               <Font name="System Bold" size="36.0"/>
+           </font>
+        </Label>
+    </StackPane>
+</AnchorPane>

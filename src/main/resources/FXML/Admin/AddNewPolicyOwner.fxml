@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="291.0" prefWidth="475.0"
+            xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="insuranceapp.groupproject_cosc2440_insuranceapp.Controllers.Admin.AddNewPolicyOwnerController">
+   <VBox prefHeight="302.0" prefWidth="475.0">
+      <StackPane prefHeight="79.0" prefWidth="466.0" stylesheets="@../../Styles/AddNewClaim.css">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+         <styleClass>
+            <String fx:value="content_container" />
+            <String fx:value="title_container" />
+         </styleClass>
+         <Label text="Add new policy owner" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+         </Label>
+      </StackPane>
+      <HBox prefHeight="60.0" prefWidth="475.0">
+         <VBox.margin>
+            <Insets left="5.0" right="5.0" />
+         </VBox.margin>
+         <StackPane prefHeight="150.0" prefWidth="200.0">
+            <Label text="Name:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </StackPane>
+         <StackPane prefHeight="90.0" prefWidth="290.0">
+            <TextField fx:id="policyOwnerNameTxtField" styleClass="text-input" stylesheets="@../../Styles/AddNewClaim.css" />
+         </StackPane>
+      </HBox>
+      <HBox prefHeight="60.0" prefWidth="475.0">
+         <VBox.margin>
+            <Insets left="5.0" right="5.0" />
+         </VBox.margin>
+         <StackPane prefHeight="150.0" prefWidth="200.0">
+            <Label text="Fee">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </StackPane>
+         <StackPane prefHeight="90.0" prefWidth="290.0">
+            <Spinner fx:id="feeSpinner" editable="true" prefHeight="26.0" prefWidth="285.0" stylesheets="@../../Styles/AddNewClaim.css" />
+         </StackPane>
+      </HBox>
+      <HBox layoutX="15.0" layoutY="88.0" prefHeight="60.0" prefWidth="475.0">
+         <StackPane prefHeight="150.0" prefWidth="200.0">
+            <Label text="Username:">
+               <font>
+                  <Font name="System Bold" size="18.0"/>
+               </font>
+            </Label>
+         </StackPane>
+         <StackPane prefHeight="90.0" prefWidth="290.0">
+            <TextField fx:id="policyOwnerUsernameTxtField" styleClass="text-input"
+                       stylesheets="@../../Styles/AddNewClaim.css"/>
+         </StackPane>
+      </HBox>
+      <HBox layoutX="15.0" layoutY="80.0" prefHeight="60.0" prefWidth="475.0">
+         <StackPane prefHeight="150.0" prefWidth="200.0">
+            <Label text="Password:">
+               <font>
+                  <Font name="System Bold" size="18.0"/>
+               </font>
+            </Label>
+         </StackPane>
+         <StackPane prefHeight="90.0" prefWidth="290.0">
+            <TextField fx:id="policyOwnerPwdTxtField" styleClass="text-input"
+                       stylesheets="@../../Styles/AddNewClaim.css"/>
+         </StackPane>
+      </HBox>
+      <StackPane prefHeight="97.0" prefWidth="475.0">
+         <Button fx:id="saveBtn" mnemonicParsing="false" styleClass="saveBtn" stylesheets="@../../Styles/AddNewClaim.css" text="Save" />
+      </StackPane>
+      <StackPane prefHeight="51.0" prefWidth="475.0">
+         <Label fx:id="errorLbl" text="Please input all information" textFill="RED" visible="false" />
+      </StackPane>
+   </VBox>
+</AnchorPane>

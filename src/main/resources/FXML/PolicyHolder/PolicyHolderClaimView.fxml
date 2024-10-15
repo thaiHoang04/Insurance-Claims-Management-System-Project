@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="810.0" styleClass="pane" stylesheets="@../../Styles/PolicyHolderClaimView.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="insuranceapp.groupproject_cosc2440_insuranceapp.Controllers.PolicyHolder.PolicyHolderClaimViewController">
+   <Label layoutX="187.0" layoutY="15.0" text="Hi" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="15.0">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font>
+   </Label>
+   <Label layoutX="187.0" layoutY="44.0" opacity="0.36" text="Policy Holder" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="50.0">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font>
+   </Label>
+   <GridPane layoutX="14.0" layoutY="89.0" prefHeight="182.0" prefWidth="604.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="90.0">
+      <columnConstraints>
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="400.0" />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints maxHeight="163.4" minHeight="10.0" prefHeight="143.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="118.4" minHeight="0.0" prefHeight="10.199999999999989" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="324.8000152587891" minHeight="10.0" prefHeight="31.400000000000006" vgrow="SOMETIMES" />
+      </rowConstraints>
+      <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="totalClaimPane" stylesheets="@../../Styles/PolicyHolderClaimView.css">
+         <VBox prefHeight="200.0" prefWidth="100.0">
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <StackPane prefHeight="150.0" prefWidth="200.0" />
+               <Label alignment="CENTER" prefHeight="35.0" prefWidth="386.0" text="Total claims:" textAlignment="CENTER">
+                  <font>
+                     <Font size="24.0" />
+                  </font>
+               </Label>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <Label fx:id="totalClaimLbl" alignment="CENTER" prefHeight="108.0" prefWidth="388.0" text="30" textAlignment="CENTER">
+                  <font>
+                     <Font name="System Bold" size="72.0" />
+                  </font>
+               </Label>
+            </StackPane>
+         </VBox>
+      </StackPane>
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+         <TextField fx:id="searchClaimTxtField" prefHeight="26.0" prefWidth="478.0" promptText="Search for a Claim (Enter a ID)" styleClass="searchBar" />
+         <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+            <Button fx:id="searchBtn" mnemonicParsing="false" styleClass="filter_container">
+               <graphic>
+                  <FontAwesomeIconView glyphName="SEARCH" size="18" text="" />
+               </graphic>
+            </Button>
+            <MenuButton mnemonicParsing="false" styleClass="filter_container">
+               <items>
+                  <MenuItem fx:id="allOpt" mnemonicParsing="false" text="ALL" />
+                  <MenuItem fx:id="newOpt" mnemonicParsing="false" text="NEW" />
+                  <MenuItem fx:id="pendingOpt" mnemonicParsing="false" text="PENDING" />
+                  <MenuItem fx:id="approveOpt" mnemonicParsing="false" text="APPROVED" />
+                  <MenuItem fx:id="requiredOpt" mnemonicParsing="false" text="REQUIRED" />
+                  <MenuItem fx:id="updatedOpt" mnemonicParsing="false" text="UPDATED" />
+                  <MenuItem fx:id="declinedOpt" mnemonicParsing="false" text="DECLINED" />
+               </items>
+               <graphic>
+                  <FontAwesomeIconView glyphName="FILTER" size="18" />
+               </graphic>
+            </MenuButton>
+            <padding>
+               <Insets left="15.0" />
+            </padding>
+         </HBox>
+         <StackPane alignment="CENTER_RIGHT" prefHeight="150.0" prefWidth="200.0">
+            <HBox.margin>
+               <Insets right="10.0"/>
+            </HBox.margin>
+            <Button fx:id="createNewClaimBtn" mnemonicParsing="false" styleClass="createClaimBtn"
+                    stylesheets="@../../Styles/PolicyHolderClaimView.css" text="Create new claim"/>
+         </StackPane>
+      </HBox>
+   </GridPane>
+   <ListView fx:id="claim_listview" layoutX="15.2" layoutY="323.2" prefWidth="604.0" stylesheets="@../../Styles/PolicyHolderClaimView.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="323.0">
+      <styleClass>
+         <String fx:value="claimListView" />
+         <String fx:value="pane" />
+      </styleClass></ListView>
+   <StackPane fx:id="errorContainer" disable="true" layoutX="5.0" layoutY="323.0" prefHeight="366.0" prefWidth="800.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+      <Label fx:id="errorLbl" blendMode="OVERLAY">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Label>
+   </StackPane>
+   <HBox layoutX="14.0" layoutY="282.0" prefHeight="35.0" prefWidth="604.0" styleClass="namePane" stylesheets="@../../Styles/PolicyHolderClaimView.css" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="285.0">
+      <StackPane blendMode="OVERLAY" prefHeight="46.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+         <Label text="Claim ID" StackPane.alignment="CENTER" />
+      </StackPane>
+      <Separator blendMode="OVERLAY" orientation="VERTICAL" prefHeight="200.0" />
+      <StackPane blendMode="OVERLAY" layoutX="10.0" layoutY="10.0" prefHeight="46.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+         <Label text="Insured Person" StackPane.alignment="CENTER" />
+      </StackPane>
+      <Separator blendMode="OVERLAY" layoutX="112.0" layoutY="10.0" orientation="VERTICAL" prefHeight="200.0" />
+      <StackPane blendMode="OVERLAY" layoutX="118.0" layoutY="10.0" prefHeight="46.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+         <Label text="Insured peron" StackPane.alignment="CENTER" />
+      </StackPane>
+      <Separator blendMode="OVERLAY" layoutX="220.0" layoutY="10.0" orientation="VERTICAL" prefHeight="200.0" />
+      <StackPane blendMode="OVERLAY" layoutX="226.0" layoutY="10.0" prefHeight="46.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+         <Label text="Status" StackPane.alignment="CENTER" />
+      </StackPane>
+      <Separator blendMode="OVERLAY" layoutX="328.0" layoutY="10.0" orientation="VERTICAL" prefHeight="200.0" />
+      <StackPane prefHeight="35.0" prefWidth="300.0" HBox.hgrow="ALWAYS" />
+   </HBox>
+   <HBox layoutX="545.0" layoutY="14.0" prefHeight="58.0" prefWidth="250.0" styleClass="accountPane" stylesheets="@../../Styles/PolicyHolderClaimView.css" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+      <ImageView fitHeight="45.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+         <HBox.margin>
+            <Insets left="5.0" top="7.0" />
+         </HBox.margin>
+         <Image url="@../../Images/avatarIcon.png" />
+      </ImageView>
+      <Label fx:id="policyHolderNameLbl" prefHeight="18.0" prefWidth="50.0" text="Name">
+         <HBox.margin>
+            <Insets left="10.0" top="20.0" />
+         </HBox.margin>
+      </Label>
+      <StackPane alignment="CENTER_RIGHT" prefHeight="58.0" prefWidth="50.0" HBox.hgrow="ALWAYS">
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+         <MenuButton mnemonicParsing="false" prefHeight="30.0" prefWidth="53.0" styleClass="settingBtn">
+            <items>
+               <MenuItem fx:id="updateInfoOpt" mnemonicParsing="false" text="Update information" />
+            </items>
+            <graphic>
+               <FontAwesomeIconView glyphName="GEAR" size="20" />
+            </graphic>
+            <padding>
+               <Insets right="10.0" />
+            </padding>
+         </MenuButton>
+      </StackPane>
+   </HBox>
+</AnchorPane>

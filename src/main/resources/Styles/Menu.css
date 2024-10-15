@@ -1,0 +1,57 @@
+.main_menu_container {
+    -fx-background-color: #E0DFDF;
+    -fx-alignment: center;
+}
+
+.left_menu_container {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10;
+}
+
+.title_menu_container {
+    -fx-background-color: #0B6623;
+    -fx-alignment: center;
+}
+
+.title_menu_container_text {
+    -fx-fill: #FFFFFF;
+    -fx-font-size: 25;
+}
+
+.menu_container {
+    -fx-alignment: center;
+    -fx-spacing: 45;
+}
+
+.menu_container Button {
+    -fx-background-color: #EEEEEE;
+    -fx-text-fill: #0B6623;
+    -fx-font-size: 14;
+    -fx-background-radius: 10;
+}
+
+/*change button to hand while hovering*/
+.menu_container Button:hover {
+    -fx-cursor: hand;
+}
+
+.menu_container Button FontAwesomeIconView {
+    -fx-fill: #0B6623;
+}
+
+.logout_menu {
+    -fx-alignment: center;
+}
+
+.logout_menu Button {
+    -fx-pref-width: 130;
+    -fx-pref-height: 25;
+    -fx-background-color: red;
+    -fx-text-fill: #FFFFFF;
+    -fx-alignment: center;
+    -fx-font-size: 16;
+}
+
+.logout_menu Button FontAwesomeIconView {
+    -fx-fill: white;
+}

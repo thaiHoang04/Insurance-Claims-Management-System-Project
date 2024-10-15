@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="550.0" prefWidth="510.0"
+            xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="insuranceapp.groupproject_cosc2440_insuranceapp.Controllers.PolicyOwner.AddNewDependentController">
+    <VBox layoutX="14.0" layoutY="14.0" prefHeight="68.0" prefWidth="400.0" styleClass="title_container" stylesheets="@../../Styles/AddNewPolicyHolder.css" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+        <Label alignment="CENTER" prefHeight="40.0" prefWidth="503.0" styleClass="title" stylesheets="@../../Styles/AddNewPolicyHolder.css" text="Add new dependent" textAlignment="CENTER" />
+        <Label alignment="CENTER" prefHeight="20.0" prefWidth="515.0" stylesheets="@../../Styles/AddNewPolicyHolder.css" text="Please enter some information for new dependent" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+    </VBox>
+    <VBox layoutX="14.0" layoutY="82.0" prefHeight="459.0" prefWidth="500.0" spacing="20.0" styleClass="type_container" stylesheets="@../../Styles/AddNewPolicyHolder.css" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+        <HBox prefHeight="40.0" prefWidth="400.0">
+            <StackPane alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="170.0">
+                <Label text="Name" />
+            </StackPane>
+            <StackPane prefHeight="44.0" prefWidth="310.0">
+                <TextField fx:id="nameTxtField" prefHeight="44.0" prefWidth="291.0" promptText="Hoang" />
+            </StackPane>
+        </HBox>
+        <HBox layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="400.0">
+            <StackPane alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="170.0">
+                <Label text="Password" />
+            </StackPane>
+            <StackPane prefHeight="44.0" prefWidth="310.0">
+                <TextField fx:id="pwdTxtField" promptText="\@123456" />
+            </StackPane>
+        </HBox>
+        <HBox layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="400.0">
+            <StackPane alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="170.0">
+                <Label text="Username" />
+            </StackPane>
+            <StackPane prefHeight="40.0" prefWidth="310.0">
+                <TextField fx:id="usernameTxtField" promptText="\@Hoang123" />
+            </StackPane>
+        </HBox>
+        <HBox layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="400.0">
+            <StackPane alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="170.0">
+                <Label text="Phone" />
+            </StackPane>
+            <StackPane prefHeight="40.0" prefWidth="310.0">
+                <TextField fx:id="phoneNumTxtField" promptText="0901234567" />
+            </StackPane>
+        </HBox>
+        <HBox layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="400.0">
+            <StackPane alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="170.0">
+                <Label text="Email" />
+            </StackPane>
+            <StackPane prefHeight="40.0" prefWidth="310.0">
+                <TextField fx:id="emailTxtField" promptText="HoangJJ@gmail.com" />
+            </StackPane>
+        </HBox>
+        <HBox layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="400.0">
+            <StackPane alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="170.0">
+                <Label text="Address" />
+            </StackPane>
+            <StackPane prefHeight="40.0" prefWidth="310.0">
+                <TextField fx:id="addressTxtField" promptText="Ho Chi Minh" />
+            </StackPane>
+        </HBox>
+        <StackPane alignment="TOP_CENTER" prefHeight="60.0" prefWidth="400.0">
+            <Button fx:id="saveBtn" mnemonicParsing="false" prefHeight="51.0" prefWidth="164.0" styleClass="saveBtn" stylesheets="@../../Styles/AddNewPolicyHolder.css" text="Save">
+                <graphic>
+                    <FontAwesomeIconView glyphName="SAVE" size="32" />
+                </graphic>
+                <StackPane.margin>
+                    <Insets />
+                </StackPane.margin>
+            </Button>
+        </StackPane>
+        <StackPane prefHeight="24.0" prefWidth="479.0">
+            <Label fx:id="errorLbl" text="Please input all the information" textFill="RED" visible="false"/>
+        </StackPane>
+    </VBox>
+</AnchorPane>

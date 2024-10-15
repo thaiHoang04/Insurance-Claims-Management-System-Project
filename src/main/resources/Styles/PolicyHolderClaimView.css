@@ -1,0 +1,123 @@
+.sideBar {
+    -fx-background-color: #FFFFFF;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+.pane {
+    -fx-background-color: #E0DFDF;
+}
+
+.sideBar Button {
+    -fx-background-color: #FFFFFF;
+}
+
+.sideBar FontAwesomeIconView {
+    -fx-background-color: #FFFFFF;
+    -fx-fill: #476F65;
+}
+
+
+.sideBar Button:hover {
+    -fx-background-color: #DDDED8;
+}
+
+.sideBar:selected {
+    -fx-text-fill: #15A984;
+}
+
+.logOutBtn {
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-background-color: #476F65;
+}
+
+.logOutBtn:hover {
+    -fx-background-color: #EE6B6E;
+    -fx-border-color: #EE6B6E;
+    -fx-text-fill: #FFFFFF;
+}
+
+.accountPane {
+    -fx-background-color: #FFFFFF;
+    -fx-effect: dropshadow( three-pass-box, #818181, 10, 0 , 2, 2);
+    -fx-background-radius: 10px;
+}
+
+.accountPane Button {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10px;
+}
+
+.accountPane FontAwesomeIconView {
+    -fx-fill: #476F65;
+}
+
+.settingBtn FontAwesomeIconView {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 30px;
+    -fx-fill: #476F65;
+}
+
+.settingBtn:hover {
+    -fx-background-color: #DDDED8;
+}
+
+.settingBtn {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10;
+    -fx-border-color: #FFFFFF;
+}
+
+.totalClaimPane {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10px;
+}
+
+.totalWaitingPane {
+    -fx-background-color: #476F65;
+    -fx-background-radius: 10px;
+}
+
+.namePane {
+    -fx-background-color: #D2D2D2;
+    -fx-background-radius: 10px;
+}
+
+.createClaimBtn {
+    -fx-background-color: #476F65;
+    -fx-background-radius: 10px;
+    -fx-text-fill: #FFFFFF;
+}
+
+.createClaimBtn:hover {
+    -fx-background-color: #79C0AF;
+}
+
+.claimListView {
+    -fx-background-color: #A6A6A6;
+    -fx-spacing: 10;
+}
+
+.claimListView .scroll-bar:vertical {
+    -fx-orientation: vertical;
+}
+
+.filter_container {
+    -fx-background-color: #E0DFDF;
+    -fx-background-radius: 10px;
+}
+
+.filter_container:hover {
+    -fx-background-color: #FFFFFF;
+}
+
+.filter_container FontAwesomeIconView {
+    -fx-background-color: #E0DFDF;
+    -fx-fill: #476F65;
+}
+
+.searchBar {
+    -fx-effect: dropshadow( three-pass-box, #818181, 10, 0 , 2, 2);
+}

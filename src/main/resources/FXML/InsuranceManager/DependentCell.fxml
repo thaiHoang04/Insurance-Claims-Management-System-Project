@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="35.0" prefWidth="700.0" stylesheets="@../../Styles/DashBoard.css"
+            xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <HBox prefHeight="35.0" prefWidth="750.0" styleClass="details_menu_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <VBox prefHeight="35.0" prefWidth="125.0" styleClass="details_menu_container">
+            <Label fx:id="dependentID" styleClass="details_menu_container_text" text="F1000000001" />
+        </VBox>
+        <VBox prefHeight="35.0" prefWidth="125.0" styleClass="details_menu_container">
+            <Label fx:id="Name" styleClass="details_menu_container_text" text="Thanh The" />
+        </VBox>
+        <VBox prefHeight="35.0" prefWidth="125.0" styleClass="details_menu_container">
+            <Label fx:id="policyHolder" styleClass="details_menu_container_text" text="HO NGOC HA" />
+        </VBox>
+        <VBox prefHeight="35.0" prefWidth="125.0" styleClass="details_menu_container">
+            <Label fx:id="cardID" styleClass="details_menu_container_text" text="1100000001" />
+        </VBox>
+        <VBox prefHeight="35.0" prefWidth="125.0" styleClass="details_menu_container">
+            <Label fx:id="phoneNumber" styleClass="details_menu_container_text" text="0909090909" />
+        </VBox>
+        <VBox prefHeight="35.0" prefWidth="80.0" styleClass="details_menu_container">
+            <Button fx:id="viewDependent" mnemonicParsing="false">
+                <graphic>
+                    <FontAwesomeIconView glyphName="SEARCH" />
+                </graphic>
+            </Button>
+        </VBox>
+    </HBox>
+</AnchorPane>

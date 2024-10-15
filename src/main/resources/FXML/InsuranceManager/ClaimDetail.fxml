@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="850.0" stylesheets="@../../Styles/Details.css"
+            xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <VBox prefHeight="100.0" prefWidth="850.0" styleClass="title_container">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title_container_text" text="CLAIM DETAILS" />
+    </VBox>
+    <HBox layoutX="119.0" layoutY="227.0" prefHeight="280.0" prefWidth="850.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="100.0">
+        <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="320.0" prefWidth="150.0">
+            <VBox prefHeight="80.0" prefWidth="150.0" styleClass="detail_title_container">
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="detail_title_container_text" text="Claim ID" />
+            </VBox>
+            <VBox prefHeight="80.0" prefWidth="150.0" styleClass="detail_title_container">
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="detail_title_container_text" text="Insured Person" />
+            </VBox>
+            <VBox prefHeight="80.0" prefWidth="150.0" styleClass="detail_title_container">
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="detail_title_container_text" text="Claim Date" />
+            </VBox>
+            <VBox prefHeight="80.0" prefWidth="150.0" styleClass="detail_title_container">
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="detail_title_container_text" text="Exam Date" />
+            </VBox>
+        </VBox>
+        <VBox prefHeight="320.0" prefWidth="275.0">
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+            <VBox prefHeight="80.0" prefWidth="275.0">
+                <VBox maxWidth="255.0" prefHeight="50.0" prefWidth="255.0" styleClass="detail_container">
+                    <VBox.margin>
+                        <Insets top="15.0" />
+                    </VBox.margin>
+                    <Label fx:id="claimID" styleClass="detail_container_text" text="C0000000001" />
+                </VBox>
+            </VBox>
+            <VBox prefHeight="80.0" prefWidth="275.0">
+                <VBox maxWidth="255.0" prefHeight="50.0" prefWidth="255.0" styleClass="detail_container">
+                    <VBox.margin>
+                        <Insets top="15.0" />
+                    </VBox.margin>
+                    <Label fx:id="insuredPerson" styleClass="detail_container_text" text="C0000000001" />
+                </VBox>
+            </VBox>
+            <VBox prefHeight="80.0" prefWidth="275.0">
+                <VBox maxWidth="255.0" prefHeight="50.0" prefWidth="255.0" styleClass="detail_container">
+                    <VBox.margin>
+                        <Insets top="15.0" />
+                    </VBox.margin>
+                    <Label fx:id="claimDate" styleClass="detail_container_text" text="C0000000001" />
+                </VBox>
+            </VBox>
+            <VBox prefHeight="80.0" prefWidth="275.0">
+                <VBox maxWidth="255.0" prefHeight="50.0" prefWidth="255.0" styleClass="detail_container">
+                    <VBox.margin>
+                        <Insets top="15.0" />
+                    </VBox.margin>
+                    <Label fx:id="examDate" styleClass="detail_container_text" text="C0000000001" />
+                </VBox>
+            </VBox>
+        </VBox>
+        <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="320.0" prefWidth="150.0">
+            <VBox prefHeight="80.0" prefWidth="150.0" styleClass="detail_title_container">
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="detail_title_container_text" text="Amount" />
+            </VBox>
+            <VBox prefHeight="80.0" prefWidth="150.0" styleClass="detail_title_container">
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="detail_title_container_text" text="Card Number" />
+            </VBox>
+            <VBox prefHeight="80.0" prefWidth="150.0" styleClass="detail_title_container">
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="detail_title_container_text" text="Status" />
+            </VBox>
+         <VBox prefHeight="80.0" prefWidth="150.0" styleClass="detail_title_container">
+            <children>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="detail_title_container_text" text="Receiver Banking Info" />
+            </children>
+         </VBox>
+        </VBox>
+        <VBox prefHeight="320.0" prefWidth="275.0">
+            <VBox prefHeight="80.0" prefWidth="275.0">
+                <VBox maxWidth="255.0" prefHeight="50.0" prefWidth="255.0" styleClass="detail_container">
+                    <VBox.margin>
+                        <Insets top="15.0" />
+                    </VBox.margin>
+                    <Label fx:id="amount" styleClass="detail_container_text" text="C0000000001" />
+                </VBox>
+            </VBox>
+            <VBox prefHeight="80.0" prefWidth="275.0">
+                <VBox maxWidth="255.0" prefHeight="50.0" prefWidth="255.0" styleClass="detail_container">
+                    <VBox.margin>
+                        <Insets top="15.0" />
+                    </VBox.margin>
+                    <Label fx:id="cardID" styleClass="detail_container_text" text="C0000000001" />
+                </VBox>
+            </VBox>
+            <VBox prefHeight="80.0" prefWidth="275.0">
+                <VBox maxWidth="255.0" prefHeight="50.0" prefWidth="255.0" styleClass="detail_container">
+                    <VBox.margin>
+                        <Insets top="15.0" />
+                    </VBox.margin>
+                    <Label fx:id="status" styleClass="detail_container_text" text="C0000000001" />
+                </VBox>
+            </VBox>
+         <VBox prefHeight="80.0" prefWidth="275.0">
+            <children>
+               <VBox maxWidth="255.0" prefHeight="50.0" prefWidth="255.0" styleClass="detail_container">
+                  <VBox.margin>
+                     <Insets top="15.0" />
+                  </VBox.margin>
+                  <children>
+                     <Label fx:id="bankingInfo" styleClass="detail_container_text" text="C0000000001" />
+                  </children>
+               </VBox>
+            </children>
+         </VBox>
+        </VBox>
+    </HBox>
+     <VBox prefHeight="270.0" prefWidth="570.0" AnchorPane.topAnchor="380.0">
+         <VBox prefHeight="20.0" prefWidth="850.0" styleClass="detail_title_container">
+             <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="detail_container_text" text="DOCUMENT LIST">
+            <VBox.margin>
+               <Insets />
+            </VBox.margin>
+         </Text>
+         </VBox>
+         <VBox prefHeight="35.0" prefWidth="850.0" styleClass="detail_container">
+             <HBox prefHeight="35.0" prefWidth="800.0">
+                 <VBox prefHeight="35.0" prefWidth="120.0" styleClass="detail_container">
+                     <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="category_menu_container_text" text="Claim ID" />
+                 </VBox>
+                 <VBox prefHeight="35.0" prefWidth="5.0" styleClass="detail_container">
+                     <Line startY="25.0" stroke="#57595d" />
+                 </VBox>
+                 <VBox prefHeight="35.0" prefWidth="130.0" styleClass="detail_container">
+                     <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="category_menu_container_text" text="Card Number" />
+                 </VBox>
+                 <VBox prefHeight="35.0" prefWidth="5.0" styleClass="detail_container">
+                     <Line startY="25.0" stroke="#57595d" />
+                 </VBox>
+                 <VBox prefHeight="35.0" prefWidth="150.0" styleClass="detail_container">
+                     <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="category_menu_container_text" text="Document Name" />
+                 </VBox>
+                 <VBox prefHeight="35.0" prefWidth="5.0" styleClass="detail_container" />
+             </HBox>
+         </VBox>
+         <ListView fx:id="documentList" prefHeight="215.0" prefWidth="550.0" />
+     </VBox>
+</AnchorPane>

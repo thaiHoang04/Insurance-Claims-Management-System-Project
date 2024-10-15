@@ -1,0 +1,29 @@
+Button {
+    -fx-background-color: #FFFFFF;
+}
+
+Button:hover {
+    -fx-background-color: #DDDED8;
+}
+
+.action_btn {
+
+    -fx-background-color: #d9d9d9;
+    -fx-background-radius: 20px;
+}
+
+.action_btn:hover {
+    -fx-background-color: #476F65;
+}
+
+.filter_btn {
+    -fx-background-color: #F9F9F9;
+}
+
+.filter_btn:hover {
+    -fx-background-color: #55A490;
+}
+
+.searchField {
+    -fx-prompt-text-fill: #8A8A8A;
+}

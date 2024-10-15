@@ -1,0 +1,52 @@
+.title_container{
+    -fx-background-color: #0B6623;
+    -fx-alignment: center;
+}
+
+.title_container_text{
+    -fx-font-size: 25;
+    -fx-fill: white;
+    -fx-font-weight: bold;
+}
+
+.message_container{
+    -fx-alignment: center;
+}
+
+.message_container_text{
+    -fx-font-size: 16;
+    -fx-fill: black;
+    -fx-font-weight: bold;
+}
+
+.message_container_text1 {
+    -fx-font-size: 20;
+    -fx-fill: black;
+    -fx-font-weight: bold;
+}
+
+
+.yes_container {
+    -fx-alignment: center;
+}
+
+.yes_container Button{
+    -fx-background-color: green;
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+}
+
+.no_container {
+    -fx-alignment: center;
+}
+
+.no_container Button{
+    -fx-background-color: red;
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+
+}
